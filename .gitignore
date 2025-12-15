@@ -1,0 +1,44 @@
+# Git configuration file for JC Lights and Sounds website
+
+# Ignore dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Ignore build outputs
+dist/
+build/
+*.zip
+
+# Ignore backups
+*.bak
+*.backup
+
+# Ignore temporary files
+*.tmp
+.cache/
+
+# Ignore package manager locks (optional)
+# Uncomment if needed:
+# package-lock.json
+# yarn.lock
