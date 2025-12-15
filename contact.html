@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JC Lights and Sounds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black border-b-2 border-red-600 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <div class="text-3xl font-bold text-red-600">🎵</div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-white">JC Lights</h1>
+                        <p class="text-xs text-red-400">& Sounds</p>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden text-red-600 text-2xl">
+                    ☰
+                </button>
+                
+                <!-- Desktop Navigation -->
+                <div id="nav-menu" class="hidden lg:flex gap-8">
+                    <a href="index.html" class="hover:text-red-500 transition">Home</a>
+                    <a href="services.html" class="hover:text-red-500 transition">Services</a>
+                    <a href="about.html" class="hover:text-red-500 transition">About</a>
+                    <a href="contact.html" class="text-red-500 transition border-b-2 border-red-500">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 border-t border-red-600">
+                <a href="index.html" class="block py-2 hover:text-red-500">Home</a>
+                <a href="services.html" class="block py-2 hover:text-red-500">Services</a>
+                <a href="about.html" class="block py-2 hover:text-red-500">About</a>
+                <a href="contact.html" class="block py-2 text-red-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-b from-gray-900 to-black py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-5xl lg:text-6xl font-bold mb-4 text-white">Get in Touch</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Have questions? We'd love to hear from you. Reach out to us anytime!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Contact Info Cards -->
+                <div class="bg-gray-900 border-2 border-red-600 rounded-lg p-8 text-center">
+                    <div class="text-5xl mb-4 text-red-600">📍</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Location</h3>
+                    <p class="text-gray-300 mb-2">Santa Cruz, Laguna</p>
+                    <p class="text-gray-300">Pagsanjan, Philippines</p>
+                </div>
+
+                <div class="bg-gray-900 border-2 border-red-600 rounded-lg p-8 text-center">
+                    <div class="text-5xl mb-4 text-red-600">📞</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Phone</h3>
+                    <p class="text-gray-300 mb-2">+63 (0)2 12345678</p>
+                    <p class="text-gray-300">+63 917 123 4567</p>
+                </div>
+
+                <div class="bg-gray-900 border-2 border-red-600 rounded-lg p-8 text-center">
+                    <div class="text-5xl mb-4 text-red-600">✉️</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Email</h3>
+                    <p class="text-gray-300 mb-2">info@jclightsandsounds.com</p>
+                    <p class="text-gray-300">bookings@jclightsandsounds.com</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 text-white">Send us a Message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-white font-semibold mb-2">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                class="w-full px-4 py-3 bg-gray-900 border border-red-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-red-500"
+                                placeholder="Your name"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-white font-semibold mb-2">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                class="w-full px-4 py-3 bg-gray-900 border border-red-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-red-500"
+                                placeholder="your@email.com"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-white font-semibold mb-2">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone"
+                                class="w-full px-4 py-3 bg-gray-900 border border-red-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-red-500"
+                                placeholder="+63 9XX XXX XXXX"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-white font-semibold mb-2">Service Interested In</label>
+                            <select 
+                                id="service" 
+                                name="service"
+                                class="w-full px-4 py-3 bg-gray-900 border border-red-600 rounded-lg text-white focus:outline-none focus:border-red-500"
+                            >
+                                <option value="">Select a service</option>
+                                <option value="pa-system">PA System Rentals</option>
+                                <option value="lighting">Stage Lighting</option>
+                                <option value="dj">DJ Equipment</option>
+                                <option value="production">Event Production</option>
+                                <option value="sound-engineering">Sound Engineering</option>
+                                <option value="installation">Installation Services</option>
+                                <option value="other">Other/Custom</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="event-date" class="block text-white font-semibold mb-2">Event Date</label>
+                            <input 
+                                type="date" 
+                                id="event-date" 
+                                name="event-date"
+                                class="w-full px-4 py-3 bg-gray-900 border border-red-600 rounded-lg text-white focus:outline-none focus:border-red-500"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-white font-semibold mb-2">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                required
+                                rows="5"
+                                class="w-full px-4 py-3 bg-gray-900 border border-red-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-red-500 resize-none"
+                                placeholder="Tell us about your event and what you need..."
+                            ></textarea>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition transform hover:scale-105"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 hidden p-4 rounded-lg text-center"></div>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="bg-gray-900 border-2 border-red-600 rounded-lg p-8">
+                    <h3 class="text-3xl font-bold text-white mb-6">Why Contact Us?</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-bold text-red-600 mb-2">📋 Free Consultation</h4>
+                            <p class="text-gray-300">
+                                Discuss your event requirements with our experts. We'll provide personalized recommendations and a detailed quote.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-bold text-red-600 mb-2">🎯 Custom Solutions</h4>
+                            <p class="text-gray-300">
+                                Every event is unique. We'll create a tailored package that meets your specific needs and budget.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-bold text-red-600 mb-2">⚡ Quick Response</h4>
+                            <p class="text-gray-300">
+                                We respond to inquiries within 24 hours. For urgent requests, call us directly for immediate assistance.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-bold text-red-600 mb-2">💰 Transparent Pricing</h4>
+                            <p class="text-gray-300">
+                                No hidden fees. We provide detailed quotes with everything clearly itemized so you know exactly what to expect.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-bold text-red-600 mb-2">🤝 Flexible Booking</h4>
+                            <p class="text-gray-300">
+                                Flexible payment options and scheduling. We'll work around your timeline and budget constraints.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr class="border-red-600 my-8">
+
+                    <div class="bg-red-600/10 border border-red-600 rounded-lg p-6">
+                        <h4 class="text-xl font-bold text-red-600 mb-3">🕒 Always Available</h4>
+                        <p class="text-gray-300 mb-3">
+                            We understand that event planning doesn't follow 9-to-5 schedules. We're available 24/7 for your convenience.
+                        </p>
+                        <p class="text-red-400 font-semibold">Call us anytime: +63 917 123 4567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-black border border-red-600 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full p-6 flex justify-between items-center text-left">
+                        <h3 class="text-xl font-bold text-white">How far in advance should I book your services?</h3>
+                        <span class="text-red-600 text-2xl">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-300">
+                            We recommend booking at least 2-4 weeks in advance for most events. However, we do accept last-minute bookings based on equipment availability. For large-scale productions, 1-2 months advance notice is preferred for optimal planning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-black border border-red-600 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full p-6 flex justify-between items-center text-left">
+                        <h3 class="text-xl font-bold text-white">What payment methods do you accept?</h3>
+                        <span class="text-red-600 text-2xl">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-300">
+                            We accept cash, bank transfers, credit cards, and digital wallets. A 50% deposit is required to secure your booking, with the remaining balance due before the event.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-black border border-red-600 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full p-6 flex justify-between items-center text-left">
+                        <h3 class="text-xl font-bold text-white">Do you provide setup and teardown?</h3>
+                        <span class="text-red-600 text-2xl">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-300">
+                            Yes! Our setup and teardown services are included in most packages. Our professional team will handle everything from installation to complete removal after your event.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-black border border-red-600 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full p-6 flex justify-between items-center text-left">
+                        <h3 class="text-xl font-bold text-white">What if there's a technical issue during my event?</h3>
+                        <span class="text-red-600 text-2xl">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-300">
+                            Our professional technicians will be on-site throughout your event. We carry backup equipment for critical components and have 24/7 support available. Your event's success is our top priority.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-black border border-red-600 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full p-6 flex justify-between items-center text-left">
+                        <h3 class="text-xl font-bold text-white">Do you offer discounts for large events or repeat bookings?</h3>
+                        <span class="text-red-600 text-2xl">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-300">
+                            Absolutely! We offer special rates for large-scale events and loyal customers. Contact us directly to discuss volume discounts and package deals tailored to your needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-black border border-red-600 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full p-6 flex justify-between items-center text-left">
+                        <h3 class="text-xl font-bold text-white">Can you handle outdoor events?</h3>
+                        <span class="text-red-600 text-2xl">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-300">
+                            Yes! We have extensive experience with outdoor events. We provide weather-resistant equipment, proper grounding, and all necessary permits. Weather contingency planning is part of our service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-red-700 to-red-900">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-white">Ready to Book?</h2>
+            <p class="text-xl text-white mb-8 opacity-90">
+                Call us directly or fill out the form above. We're here to make your event unforgettable!
+            </p>
+            <a href="tel:+639171234567" class="bg-white text-red-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg text-lg transition transform hover:scale-105 inline-block">
+                Call Now: +63 917 123 4567
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t-2 border-red-600 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-bold text-red-600 mb-4">JC Lights & Sounds</h4>
+                    <p class="text-gray-400">
+                        Professional band equipment and sound system rentals for unforgettable events.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+                        <li><a href="services.html" class="hover:text-red-500">Services</a></li>
+                        <li><a href="about.html" class="hover:text-red-500">About</a></li>
+                        <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Contact Info</h4>
+                    <p class="text-gray-400">
+                        <strong>Location:</strong> Santa Cruz, Laguna<br>
+                        <strong>Pagsanjan, Philippines</strong><br>
+                        <strong>Email:</strong> info@jclightsandsounds.com<br>
+                        <strong>Phone:</strong> +63 (0)2 12345678
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 JC Lights & Sounds. All rights reserved. | Always Open</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

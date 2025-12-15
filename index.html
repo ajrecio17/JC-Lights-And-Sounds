@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Lights and Sounds - Professional Band Equipment & Event Planning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black border-b-2 border-red-600 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <div class="text-3xl font-bold text-red-600">🎵</div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-white">JC Lights</h1>
+                        <p class="text-xs text-red-400">& Sounds</p>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden text-red-600 text-2xl">
+                    ☰
+                </button>
+                
+                <!-- Desktop Navigation -->
+                <div id="nav-menu" class="hidden lg:flex gap-8">
+                    <a href="index.html" class="hover:text-red-500 transition">Home</a>
+                    <a href="services.html" class="hover:text-red-500 transition">Services</a>
+                    <a href="about.html" class="hover:text-red-500 transition">About</a>
+                    <a href="contact.html" class="hover:text-red-500 transition">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 border-t border-red-600">
+                <a href="index.html" class="block py-2 hover:text-red-500">Home</a>
+                <a href="services.html" class="block py-2 hover:text-red-500">Services</a>
+                <a href="about.html" class="block py-2 hover:text-red-500">About</a>
+                <a href="contact.html" class="block py-2 hover:text-red-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-gray-900 to-black py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 right-10 w-96 h-96 bg-red-600 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-10 left-10 w-80 h-80 bg-red-600 rounded-full filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                <span class="text-red-600">Professional Sound</span>
+                <br>
+                <span class="text-white">& Lighting Solutions</span>
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Elevate your events with cutting-edge audio and lighting equipment. From intimate gatherings to large-scale productions, we deliver exceptional experiences.
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="services.html" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105">
+                    Explore Services
+                </a>
+                <a href="contact.html" class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-bold py-3 px-8 rounded-lg transition">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section class="py-20 bg-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-4 text-white">Featured Services</h3>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                Choose from our comprehensive range of professional audio and lighting services tailored to your event needs.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6 hover:shadow-2xl hover:shadow-red-600/50 transition transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-red-600">🎤</div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">PA System Rentals</h4>
+                    <p class="text-gray-300 mb-4">
+                        Professional grade speakers and amplifiers for any venue size. Crystal clear audio for speeches, music, and performances.
+                    </p>
+                    <a href="services.html" class="text-red-500 hover:text-red-400 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6 hover:shadow-2xl hover:shadow-red-600/50 transition transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-red-600">💡</div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">Stage Lighting</h4>
+                    <p class="text-gray-300 mb-4">
+                        Dynamic lighting setups with LED fixtures, spotlights, and special effects. Create the perfect ambiance for any event.
+                    </p>
+                    <a href="services.html" class="text-red-500 hover:text-red-400 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6 hover:shadow-2xl hover:shadow-red-600/50 transition transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-red-600">🎧</div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">DJ Equipment</h4>
+                    <p class="text-gray-300 mb-4">
+                        Professional turntables, mixers, and audio controllers. Perfect for weddings, parties, and nightlife events.
+                    </p>
+                    <a href="services.html" class="text-red-500 hover:text-red-400 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6 hover:shadow-2xl hover:shadow-red-600/50 transition transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-red-600">🎬</div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">Event Production</h4>
+                    <p class="text-gray-300 mb-4">
+                        Full-service event production including setup, soundcheck, and technical support from start to finish.
+                    </p>
+                    <a href="services.html" class="text-red-500 hover:text-red-400 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6 hover:shadow-2xl hover:shadow-red-600/50 transition transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-red-600">🔊</div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">Sound Engineering</h4>
+                    <p class="text-gray-300 mb-4">
+                        Expert audio mixing and mastering. Ensure perfect sound levels and quality for your live performances.
+                    </p>
+                    <a href="services.html" class="text-red-500 hover:text-red-400 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6 hover:shadow-2xl hover:shadow-red-600/50 transition transform hover:scale-105">
+                    <div class="text-4xl mb-4 text-red-600">⚡</div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">Installation Services</h4>
+                    <p class="text-gray-300 mb-4">
+                        Professional installation of permanent audio and lighting systems for venues, studios, and commercial spaces.
+                    </p>
+                    <a href="services.html" class="text-red-500 hover:text-red-400 font-semibold">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12 text-white">Why Choose JC Lights & Sounds?</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-red-600 mb-3">15+</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Years Experience</h4>
+                    <p class="text-gray-400">Trusted by hundreds of satisfied clients in Laguna and beyond</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-red-600 mb-3">500+</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Events Completed</h4>
+                    <p class="text-gray-400">From intimate gatherings to large-scale productions</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-red-600 mb-3">100%</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Customer Satisfaction</h4>
+                    <p class="text-gray-400">Commitment to excellence in every project</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-red-600 mb-3">24/7</div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Support</h4>
+                    <p class="text-gray-400">Always available when you need us most</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-black">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12 text-white">What Our Clients Say</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6">
+                    <div class="flex mb-4">
+                        <span class="text-red-600">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "JC Lights & Sounds made our wedding reception absolutely unforgettable. The sound system was crystal clear and the lighting setup created the perfect romantic ambiance. Highly recommend!"
+                    </p>
+                    <p class="font-bold text-white">Maria Santos</p>
+                    <p class="text-sm text-gray-400">Wedding Planner</p>
+                </div>
+
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6">
+                    <div class="flex mb-4">
+                        <span class="text-red-600">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Professional, reliable, and incredibly skilled. They handled the complete audio setup for our concert and the result was phenomenal. Will definitely hire them again!"
+                    </p>
+                    <p class="font-bold text-white">Juan Dela Cruz</p>
+                    <p class="text-sm text-gray-400">Event Organizer</p>
+                </div>
+
+                <div class="bg-gray-900 border border-red-600 rounded-lg p-6">
+                    <div class="flex mb-4">
+                        <span class="text-red-600">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "Outstanding customer service and top-quality equipment. From initial consultation to post-event support, they were exceptional. Best investment for our venue!"
+                    </p>
+                    <p class="font-bold text-white">Rosa Garcia</p>
+                    <p class="text-sm text-gray-400">Venue Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-red-700 to-red-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-4xl lg:text-5xl font-bold mb-6 text-white">Ready to Elevate Your Event?</h3>
+            <p class="text-xl text-white mb-8 opacity-90">
+                Let us bring professional sound and lighting expertise to your next project. Contact us today for a free consultation!
+            </p>
+            <a href="contact.html" class="bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-10 rounded-lg text-lg transition transform hover:scale-105 inline-block">
+                Get Your Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t-2 border-red-600 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-bold text-red-600 mb-4">JC Lights & Sounds</h4>
+                    <p class="text-gray-400">
+                        Professional band equipment and sound system rentals for unforgettable events.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+                        <li><a href="services.html" class="hover:text-red-500">Services</a></li>
+                        <li><a href="about.html" class="hover:text-red-500">About</a></li>
+                        <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Contact Info</h4>
+                    <p class="text-gray-400">
+                        <strong>Location:</strong> Santa Cruz, Laguna<br>
+                        <strong>Pagsanjan, Philippines</strong><br>
+                        <strong>Email:</strong> info@jclightsandsounds.com<br>
+                        <strong>Phone:</strong> +63 (0)2 12345678
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 JC Lights & Sounds. All rights reserved. | Always Open</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
